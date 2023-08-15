@@ -1,0 +1,40 @@
+BU PROJE İLK FLUTTER PROJEM MİCRO HESAP MAKİNESİ BURDA ÖĞRENDİKLERİM HAKKINDA BİLGİ VERİYORUM... (:
+
+-Widget; {
+    Flutter'da herşey bir Widget'dır bir metin kutusu, resim veya daha karmaşık bileşenler
+    gibi her şey bir Widget olarak temsil edilir. Bu bileşenlerin hepsi, görünümünüze 
+    ve kullanıcı arayüzünü oluşturmanıza yardımcı olur.
+}
+
+-Class: {
+    sınıf yapıları bir tasarım kalıbını yansıtmak için kullanılır ve ikiye ayrılır.
+    StatefulWidget;
+    StatelessWidget;
+}
+
+-StatelessWidget; {
+    StatelessWidget'lar oluşturuldukları anda değişmez bir yapıya sahiptir ve içerisindeki veri ve -ya durum
+    zaman içerisinde değişmez. Bu nedenle basit ve sabit UI bileşenlerini oluşturmak için kullanılır.
+}
+
+-StatefulWidget; {
+    StatefulWidget ve State sınıfı birlikte çalışırlar.
+    StatefulWidget, kullanıcı arayüzünün görsel tasarımını sağlarken
+    State sınıfı bu arayüzdeki durumu ve değişiklikleri yönetir.
+
+    StatefulWidget'lar özellikle kullanıcı etkileşimine dayalı ve dinamik arayüz bileşenleri
+    oluşturmak için kullanılır. Durumu değiştikçe bileşen yeniden çizilir ve güncel verileri yansıtır.
+}
+
+-FAT ARROW; {
+    Flutter projeleri yazarken tek satırlık ifade varsa ve return dönüş değeri yoksa '=>' bu syntax kullanarak yazılır.
+    Diğer adı ile şişman ok.
+}
+
+-Öğrenilenler; {
+    -Container ve widget hiyerarşisi.
+    -Kullanıcı'dan veri alma.
+    -setState fonksiyonu (durum değişikliklerini bildirerek yeniden çizim yapmayı etkiler).
+    -Buton kullanımı.
+    -.parse dönüştürmek ayrıştırma işlemi.
+}
