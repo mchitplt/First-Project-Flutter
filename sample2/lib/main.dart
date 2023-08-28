@@ -7,69 +7,69 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       color: Colors.white,
-      title: "Uygulma çerçevesi",
-      home: Iskele(),
+      title: "App Frame",
+      home: Dock(),
     );
   }
 }
 
-class Iskele extends StatelessWidget {
+class Dock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
       appBar: AppBar(
-        title: const Text("Boş Uygulama Çerçevesi"),
+        title: const Text("Empty App Frame"),
       ),
-      body: AnaEkran(),
+      body: MainScreen(),
       );
   }
 }
 
-class AnaEkran extends StatefulWidget {
+class  extends MainScreen StatefulWidget {
   @override
 
-  _AnaEkranState createState() => _AnaEkranState();
+  _MainScreenState createState() => _MainScreenState();
 }
-class _AnaEkranState extends State<AnaEkran> {
+class _MainScreenState extends State<MainScreen> {
 
-  num sayi1 = 0;
-  num sayi2 = 0;
-  num sonuc = 0;
+  num number1 = 0;
+  num number2 = 0;
+  num total = 0;
 
   TextEditingController t1 = TextEditingController();
   TextEditingController t2 = TextEditingController();
 
 
-  sayiTopla() {
+  numberSum() {
     setState(() {
-      sayi1 = num.parse(t1.text);
-      sayi2 = num.parse(t2.text);
-      sonuc = sayi1 + sayi2;
+      number1 = num.parse(t1.text);
+      number2 = num.parse(t2.text);
+      total = number1 + number2;
     });
   }
 
-  sayiCikar() {
+  numberSubtract() {
     setState(() {
-      sayi1 = num.parse(t1.text);
-      sayi2 = num.parse(t2.text);
-      sonuc = sayi1 - sayi2;
+      number1 = num.parse(t1.text);
+      number2 = num.parse(t2.text);
+      total = number1 - number2;
     });
   }
 
-  sayiCarp() {
+  numberMultiply() {
     setState(() {
-      sayi1 = num.parse(t1.text);
-      sayi2 = num.parse(t2.text);
-      sonuc = sayi1 * sayi2;
+      number1 = num.parse(t1.text);
+      number2 = num.parse(t2.text);
+      total = number1 * number2;
     });
   }
 
-    sayiBol() {
+    numberDivide() {
     setState(() {
-      sayi1 = num.parse(t1.text);
-      sayi2 = num.parse(t2.text);
-      sonuc = sayi1 / sayi2;
+      number1 = num.parse(t1.text);
+      number2 = num.parse(t2.text);
+      total = number1 / number2;
     });
   }
 
@@ -83,7 +83,7 @@ class _AnaEkranState extends State<AnaEkran> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("$sonuc"),
+            Text("$total"),
             TextField(
               controller: t1,
             ),
@@ -91,20 +91,20 @@ class _AnaEkranState extends State<AnaEkran> {
               controller: t2,
             ),
             ElevatedButton(
-              onPressed: sayiTopla,
-              child: Text("Topla"),
+              onPressed: numberSum,
+              child: Text("Total"),
             ),
             ElevatedButton(
-              onPressed: sayiCikar, 
-              child: Text("Çıkar"),
+              onPressed: numberSubtract, 
+              child: Text("Subtract"),
             ),
             ElevatedButton(
-              onPressed: sayiCarp,
-              child: Text("Çarp"),
+              onPressed: numberMultiply,
+              child: Text("Multiply"),
             ),
             ElevatedButton(
-              onPressed: sayiBol,
-              child: Text("Böl"),
+              onPressed: numberDivide,
+              child: Text("Divide"),
             ),
           ],
         ),
