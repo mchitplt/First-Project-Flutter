@@ -38,3 +38,51 @@ BU PROJE İLK FLUTTER PROJEM MİCRO HESAP MAKİNESİ BURDA ÖĞRENDİKLERİM HAK
     -Buton kullanımı.
     -.parse dönüştürmek ayrıştırma işlemi.
 }
+
+
+
+//English
+
+
+
+THIS PROJECT IS MY FIRST FLUTTER PROJECT MICRO CALCULATOR HERE I GIVE INFORMATION ABOUT WHAT I LEARNED... (:
+
+-Widgets; {
+     In Flutter everything is a Widget a text box, image or more complex components
+     Like everything is represented as a Widget. All of these components add to your look.
+     and helps you build the user interface.
+}
+
+-Class: {
+     Class structures are used to reflect a design pattern and are divided into two.
+     StatefulWidget;
+     StatelessWidget;
+}
+
+-StatelessWidget; {
+     StatelessWidgets have an immutable structure at the time they are created and the data or state in them
+     does not change over time. Therefore it is used to create simple and fixed UI components.
+}
+
+-StatefulWidget; {
+     StatefulWidget and State class work together.
+     While StatefulWidget provides the visual design of the UI
+     The State class manages the state and changes in this interface.
+
+     StatefulWidgets are especially user-interactive and dynamic interface components.
+     used to create. As its state changes, the component is redrawn and reflects the current data.
+}
+
+-FAT ARROW; {
+     When writing Flutter projects, '=>' is written using this syntax if there is a single line expression and no return value.
+     Also known as the fat arrow.
+}
+
+-Learned; {
+     -Container and widget hierarchy.
+     - Receiving data from the user.
+     -setState function (affects redrawing by notifying state changes).
+     -Button usage.
+     -.parse convert parse operation.
+}
+
